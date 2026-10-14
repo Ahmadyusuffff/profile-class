@@ -50,16 +50,16 @@ const members = [
 /* ===== FOTO GALERI =====
    */
 const gallery = [
-  { src: "foto/IMG-20261008-WA0169.jpg", caption: "Foto Bersama Kelas 1E" },     
-  { src: "foto/IMG-20261008-WA0120.jpg", caption: "Kebersamaan di Kelas" },
-  { src: "foto/IMG-20261008-WA0125.jpg", caption: "Di Depan Gedung FITK" },       
-  { src: "foto/IMG-20261008-WA0118.jpg", caption: "Santai Bareng di Kampus" },
-  { src: "foto/IMG-20261008-WA0197.jpg", caption: "Mahasiswi Kelas 1E" },
-  { src: "foto/IMG-20261008-WA0129.jpg", caption: "Para Mahasiswa dengan Batik" }, 
-  { src: "foto/IMG-20261008-WA0143.jpg", caption: "Keseruan di Dalam Kelas" },
-  { src: "foto/IMG-20261008-WA0114.jpg", caption: "Foto Bersama Dosen" },         
-  { src: "foto/IMG-20261008-WA0202.jpg", caption: "Mahasiswa Kelas 1E" },
-  { src: "foto/IMG-20260924-WA0104.jpg", caption: "Kompak Berbatik" }
+  { src: "foto/IMG-20261008-WA0169.jpg", caption: "Fotbar" },     
+  { src: "foto/IMG-20261008-WA0120.jpg", caption: "Fotbar" },
+  { src: "foto/IMG-20261008-WA0125.jpg", caption: "Fotbar" },       
+  { src: "foto/IMG-20261008-WA0118.jpg", caption: "Fotbar" },
+  { src: "foto/IMG-20261008-WA0197.jpg", caption: "Fotbar" },
+  { src: "foto/IMG-20261008-WA0129.jpg", caption: "Fotbar" }, 
+  { src: "foto/IMG-20261008-WA0143.jpg", caption: "Fotbar" },
+  { src: "foto/IMG-20261008-WA0114.jpg", caption: "Fotbar" },         
+  { src: "foto/IMG-20261008-WA0202.jpg", caption: "Fotbar" },
+  { src: "foto/IMG-20260924-WA0104.jpg", caption: "Fotbar" }
 ];
 
 /* ===== STRUKTUR KELAS ===== */
