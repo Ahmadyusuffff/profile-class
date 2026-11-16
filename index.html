@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Website Kelas 1E — Profil Kelas</title>
+<meta name="description" content="Profil Kelas 1E: struktur kelas, anggota, dan galeri kebersamaan.">
+<meta name="theme-color" content="#0a2a5e">
+<meta property="og:image" content="logo.png"><meta property="og:title" content="Kelas 1E — Profil Kelas"><meta property="og:description" content="Menuntut ilmu dengan adab, tumbuh bersama dalam ukhuwah.">
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,7 +15,7 @@
 </head>
 <body class="locked">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="logo" viewBox="0 0 100 100"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f9e9b5"/><stop offset="1" stop-color="#c9922e"/></linearGradient><linearGradient id="lgB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eb4f5"/><stop offset="1" stop-color="#0a2a5e"/></linearGradient></defs><path d="M50.0 2.0 L64.0 16.1 L83.9 16.1 L83.9 36.0 L98.0 50.0 L83.9 64.0 L83.9 83.9 L64.0 83.9 L50.0 98.0 L36.0 83.9 L16.1 83.9 L16.1 64.0 L2.0 50.0 L16.1 36.0 L16.1 16.1 L36.0 16.1Z" fill="url(#lgG)" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/><circle cx="50" cy="50" r="28" fill="url(#lgB)" stroke="#f9e9b5" stroke-width="2"/><circle cx="50" cy="50" r="23.5" fill="none" stroke="#f9e9b5" stroke-opacity=".55" stroke-dasharray="2 3"/><text x="50" y="59.5" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="800" font-size="26" fill="#fff">1E</text></symbol>
+<symbol id="logo" viewBox="0 0 100 100"><image href="logo.png" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid meet"/></symbol>
 <symbol id="lan" viewBox="0 0 44 100"><defs><linearGradient id="lanG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f9e9b5"/><stop offset="1" stop-color="#d4a437"/></linearGradient></defs><line x1="22" y1="0" x2="22" y2="26" stroke="#f3dc9b" stroke-width="2"/><path d="M15 26h14l2 6H13z" fill="#c9922e"/><path d="M13 32h18l5 14v22l-8 12H16L8 68V46z" fill="url(#lanG)"/><path d="M22 36v40M15 40v32M29 40v32" stroke="#fff" stroke-opacity=".55" stroke-width="1.2"/><path d="M16 80h12l-3 8h-6z" fill="#c9922e"/><circle cx="22" cy="92" r="3" fill="#f3dc9b"/></symbol>
 <symbol id="usr" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.6-4.6 4.2-7 8.5-7s7.9 2.4 8.5 7z"/></symbol>
 </svg>
@@ -52,6 +56,8 @@
   </div>
 </section>
 
+<div class="strip" aria-hidden="true"><div><span>Adab</span><span>✦</span><span>Ilmu</span><span>☪</span><span>Ukhuwah</span><span>✦</span><span>Amanah</span><span>☪</span><span>Adab</span><span>✦</span><span>Ilmu</span><span>☪</span><span>Ukhuwah</span><span>✦</span><span>Amanah</span><span>☪</span><span>Adab</span><span>✦</span><span>Ilmu</span><span>☪</span><span>Ukhuwah</span><span>✦</span><span>Amanah</span><span>☪</span><span>Adab</span><span>✦</span><span>Ilmu</span><span>☪</span><span>Ukhuwah</span><span>✦</span><span>Amanah</span><span>☪</span></div></div>
+
 <section id="tentang" class="sec cream">
   <h2 class="rv">Tentang Kelas</h2>
   <div class="about rv">
@@ -73,8 +79,9 @@
   <div class="tools rv">
     <input id="q" type="search" placeholder="Cari nama anggota…" aria-label="Cari anggota">
     <div class="seg" id="filter">
-      <button class="on" data-f="all">Semua</button><button data-f="L">Laki-laki</button><button data-f="P">Perempuan</button>
+      <button class="on" data-f="all">Semua</button><button data-f="L">Laki-laki</button><button data-f="P">Perempuan</button><button data-f="core">Pengurus & PJ</button>
     </div>
+    <button id="sort" class="srt" aria-pressed="false">Urutkan A–Z</button>
   </div>
   <p id="count" class="hint"></p>
   <div id="cards" class="cards"></div>
@@ -102,11 +109,28 @@
   <svg class="lg flg"><use href="#logo"/></svg><h3>KELAS 1E</h3>
   <p class="ar">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً</p>
   <p>Bersama dalam ilmu, bersatu dalam ukhuwah.</p>
-  <nav><a href="#home">Home</a><a href="#tentang">Tentang</a><a href="#struktur">Struktur</a><a href="#anggota">Anggota</a><a href="#galeri">Galeri</a><a id="igFoot" target="_blank" rel="noopener">Instagram</a></nav>
+  <nav><a href="#home">Home</a><a href="#tentang">Tentang</a><a href="#struktur">Struktur</a><a href="#anggota">Anggota</a><a href="#galeri">Galeri</a><a id="share" href="#">Bagikan</a><a id="igFoot" target="_blank" rel="noopener">Instagram</a></nav>
   <small>© <span id="yr"></span> Kelas 1E.</small>
 </footer>
 
-<div id="lb" hidden><button id="lbx" aria-label="Tutup">✕</button><figure><div id="lbimg"></div><figcaption id="lbcap"></figcaption></figure></div>
+<div id="rm" hidden role="dialog" aria-modal="true" aria-label="Detail jabatan"><div class="rbox" id="rbox"><button id="rx" class="lbb" aria-label="Tutup">✕</button><div id="rbody"></div><div class="mnav"><button id="rp" class="lbb" aria-label="Jabatan sebelumnya">‹</button><button id="rn" class="lbb" aria-label="Jabatan berikutnya">›</button></div></div></div>
+<div id="mm" hidden role="dialog" aria-modal="true" aria-label="Profil anggota"><div class="mbox"><button id="mx" class="lbb" aria-label="Tutup">✕</button><div id="mbody"></div><div class="mnav"><button id="mp" class="lbb" aria-label="Sebelumnya">‹</button><button id="mn" class="lbb" aria-label="Berikutnya">›</button></div></div></div>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Penampil foto galeri">
+  <div id="lbbg"></div>
+  <div id="lbbar"><i></i></div>
+  <div id="lbtop">
+    <span id="lbcount">1 / 1</span>
+    <div class="lbtools">
+      <button id="lbplay" class="lbb" aria-label="Putar otomatis" title="Putar otomatis (Spasi)">▶</button>
+      <button id="lbzoom" class="lbb" aria-label="Perbesar" title="Perbesar">⤢</button>
+      <button id="lbx" class="lbb" aria-label="Tutup" title="Tutup (Esc)">✕</button>
+    </div>
+  </div>
+  <button id="lbprev" class="lbb lbn prev" aria-label="Foto sebelumnya">‹</button>
+  <button id="lbnext" class="lbb lbn next" aria-label="Foto berikutnya">›</button>
+  <figure id="lbstage"><div id="lbimg"></div><figcaption id="lbcap"></figcaption></figure>
+  <div id="lbthumbs" aria-label="Daftar foto"></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
